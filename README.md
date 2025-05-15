@@ -1,4 +1,3 @@
-````markdown
 # lambdaworks-groth16-ts
 
 TypeScript bindings for the Lambdaworks Groth16 zero-knowledge proof system.
