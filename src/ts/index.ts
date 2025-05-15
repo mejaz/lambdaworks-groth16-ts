@@ -3,6 +3,7 @@ import {
   Groth16SetupWrapper,
   Groth16ProverWrapper,
   verify_proof
+  // @ts-ignore
 } from '../../pkg';
 
 /**
