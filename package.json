@@ -1,0 +1,48 @@
+{
+  "name": "lambdaworks-groth16-ts",
+  "version": "0.1.0",
+  "description": "TypeScript bindings for Lambdaworks Groth16 zero-knowledge proof system",
+  "main": "dist/src/ts/index.js",
+  "types": "dist/src/ts/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist/",
+    "pkg/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build:wasm": "wasm-pack build src/rust --target nodejs --out-dir ../../pkg",
+    "build:ts": "tsc",
+    "build": "npm run build:wasm && npm run build:ts",
+    "test": "node --experimental-wasm-modules test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "groth16",
+    "cryptography",
+    "zk-snark",
+    "wasm",
+    "webassembly",
+    "rust"
+  ],
+  "author": "Mohd Ejaz Siddiqui",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mejaz/lambdaworks-groth16-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mejaz/lambdaworks-groth16-ts/issues"
+  },
+  "homepage": "https://github.com/mejaz/lambdaworks-groth16-ts#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.8.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {}
+}

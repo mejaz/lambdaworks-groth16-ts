@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+pnpm-lock.yaml
+yarn.lock
+
+# Rust build artifacts
+/target/
+**/target/
+**/*.rs.bk
+Cargo.lock
+
+# WebAssembly build artifacts
+/pkg/
+**/dist/
+*.wasm
+
+# TypeScript build artifacts
+/dist/
+*.tsbuildinfo
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+*.swo
+.DS_Store
+.nyc_output
+.vs/
+
+# Test files
+/coverage/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Miscellaneous
+/.tmp/
+/temp/
+.cache/
+tmp/
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
